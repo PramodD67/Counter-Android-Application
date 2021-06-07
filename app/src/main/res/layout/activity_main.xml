@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="44dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Counter Application"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/counter_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#272323"
+            android:textSize="100sp" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
